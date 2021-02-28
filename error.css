@@ -1,0 +1,100 @@
+   body {
+      background: linear-gradient(to top left, yellow, orangered, orange);
+      font-size: 15px;
+      text-align: center;
+   }
+
+   /*END----------------------------------------------------------------- BODY*/
+
+   /*START----------------------------------------------------------------- P */
+   p {
+      color: orange;
+      font-size: 10px;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      text-align: center;
+      font-style: oblique;
+      text-overflow: clip;
+      text-indent: inherit;
+   }
+
+   /*END-----------------------------------------------------------------P */
+
+   /*start-------------------li------a,li-----------a::selection----------a:hover-------------------*/
+   a:hover {
+color: rgb(221, 221, 196);   }
+
+   a::selection {
+      color: rgb(23, 155, 207);
+   }
+
+   a,
+   li {
+      list-style-type: none;
+      text-transform: capitalize;
+      text-decoration: none;
+      display: inline;
+      color: rgb(229, 255, 0);
+      padding: 40px;
+      text-anchor: start;
+   }
+
+   li {
+      font-size: 20px;
+      animation-name: inherit;
+   }
+
+   /*END-------------------li------a,li-----------a::selection----------a:hover-------------------*/
+   h1 {
+      font-size: 25px;
+      text-align: center;
+      font-size: 202px;
+      text-align: center;
+      margin: 115px;
+      color: rgb(255, 102, 0);
+      text-shadow: 1px 0 10px #eeff00;
+   }
+
+   h1:hover {
+      background: linear-gradient(rgb(200, 255, 0), rgb(200, 255, 0));
+      color: rgb(7, 7, 7);
+   }
+
+   h1:active {
+      color: black;
+   }
+
+   h1::selection {
+      color: black;
+   }
+
+   .button {
+      color: darkorange;
+      animation: pulsate 12s ease-in;
+      animation-iteration-count: infinite;
+      opacity: 1;
+   }
+
+   @-webkit-keyframes pulsate {
+      0% {
+         -webkit-transform: scale(0.1, 0.1);
+         opacity: 0.0;
+      }
+
+      50% {
+         opacity: 1.0;
+      }
+
+      100% {
+         -webkit-transform: scale(1.2, 1.2);
+         opacity: 0.0;
+      }
+   }
+
+
+   .f {
+      background-color: darkorange;
+      animation: pulsate 20s ease-out;
+      animation-iteration-count: infinite;
+      opacity: 1;
+   }
